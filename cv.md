@@ -79,3 +79,6 @@ int main(int argc, char*argv[])
 
 }
 ```
+---
+### Languages
+##### English level - B2 according to the test in the university.
