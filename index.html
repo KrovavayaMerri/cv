@@ -80,7 +80,53 @@
           </li>
         </ul>
       </section>
-      <section class="section" id="Code"></section>
+      <section class="section" id="Code">
+        <h2 class="section-title">Code</h2>
+        <pre class="pre" >
+        <code>
+#include <iostream>
+using namespace std;
+const double pi = 3.14;
+int main(int argc, char*argv[])
+{
+	double r, so, st, h, l, sp, a, b;
+	if (argc == 2) {
+		char*number = argv[1];
+		switch (*number) {
+		case 'B':
+			cout << "Enter radius of circle: ";
+			cin >> r;
+			if (r <= 0) {
+				cout << "error ";
+				cerr << "error ";
+				exit(-1);
+			}
+			else 
+				so = pi*r*r;
+			cout << "square: " << so;
+			break;
+		case 'D':
+			cout << "Enter height and middle line of trapezoid: ";
+			cin >> h >> l;
+			if (h <= 0 || l <= 0) {
+				cout << "error ";
+				cerr << "error ";
+				exit(-1);
+			}
+			else 
+			st = 0.5*l*h;
+			cout << "square: "<< st;
+			break;
+	else {
+		cout << "program needs parametr ";
+		cerr << "program needs parametr ";
+	}
+	system("pause");
+	return 0;
+}
+          </code>
+        </pre>
+      </section>
       <section class="section" id="Languages"></section>
       <section class="section" id="Education"></section>
     </div>

@@ -146,4 +146,6 @@ a{
   text-decoration: none;
 }
 
- 
+ code{
+  font-family:'Lora', serif; ;
+ }
