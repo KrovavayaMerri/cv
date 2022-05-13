@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>cv</title>
+</head>
+<body>
+  <header class="header">
+    <div class ="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item" id="Contacts"><a href="#Contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item" id="Summary"><a href="#Summary" class="nav-link">Summary </a></li>
+          <li class="nav-item" id="Skills"><a href="#Skills" class="nav-link">Skills</a></li>
+          <li class="nav-item" id="Code example"><a href="#Code" class="nav-link">Code</a></li>
+          <li class="nav-item" id="Languages"><a href="#Languages" class="nav-link">Languages</a></li>
+          <li class="nav-item" id="Education"><a href="#Education" class="nav-link">Education</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class = "header">
+    <div class ="container main-container">
+      <section class="section-profile" id="profile">
+        <img src="./assets/ya.jpg" alt="Liza" class="section-profile-logo">
+        <div class="section-profile-title">
+          <h1 class="section-main-title">
+            Liza Tipanova
+          </h1>
+          <h3 class="section-subtitle">
+            Student/Future manager
+          </h3>
+        </div></section>
+      <section class="section" id="Contacts">
+        <h2 class="section-title" >Contacts</h2>
+        <ul class="section-list" >
+          <li class="section-item contacts-item">
+            Vitebsk, Belarus
+          </li>
+          <li class="section-item contacts-item">
+            Email:
+            <a href="mailto:liza.tipanova@mail.ru" style="color: black;" title="email">
+              liza.tipanova@mail.ru
+            </a>
+          </li>
+          <li class="section-item contacts-item">
+            Github: <a href="https://github.com/KrovavayaMerri" style="color: black;"  title="github">KrovavayaMerri</a>
+          </li>
+          <li class="section-item contacts-item">
+            Telegram:<a href="https://t.me/krovavaya_merri" style="color: black;" title="telegram">@Krovavaya_merri</a>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="Summary">
+        <h2 class="section-title">Summary</h2>
+        <p>
+          I was born in Vitebsk in the Republic of Belarus. Now I am a first-year student of the faculty of Mathemathics and Information technologies. My profession will be economist-manager of information systems. I have skills in writting code at C++ and my future I want to connect with programming and economics.
+        </p>
+      </section>
+      <section class="section" id="Skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="section-list">
+          <li class="section-item contacts-item">
+            C++
+          </li>
+          <li class="section-item contacts-item">
+            html
+          </li>
+          <li class="section-item contacts-item">
+            Adobe Photoshop
+          </li>
+          <li class="section-item contacts-item">
+            Inkcscape
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="Code">
+        <h2 class="section-title">Code</h2>
+        <pre class="pre" >
+        <code>
+#include <iostream>
+using namespace std;
+const double pi = 3.14;
+int main(int argc, char*argv[])
+{
+	double r, so, st, h, l, sp, a, b;
+	if (argc == 2) {
+		char*number = argv[1];
+		switch (*number) {
+		case 'B':
+			cout << "Enter radius of circle: ";
+			cin >> r;
+			if (r <= 0) {
+				cout << "error ";
+				cerr << "error ";
+				exit(-1);
+			}
+			else 
+				so = pi*r*r;
+			cout << "square: " << so;
+			break;
+		case 'D':
+			cout << "Enter height and middle line of trapezoid: ";
+			cin >> h >> l;
+			if (h <= 0 || l <= 0) {
+				cout << "error ";
+				cerr << "error ";
+				exit(-1);
+			}
+			else 
+			st = 0.5*l*h;
+			cout << "square: "<< st;
+			break;
+	else {
+		cout << "program needs parametr ";
+		cerr << "program needs parametr ";
+	}
+	system("pause");
+	return 0;
+}
+          </code>
+        </pre>
+      </section>
+      <section class="section" id="Languages">
+        <h2 class="section-title">Languages</h2>
+        English level - B2 according to the test in the university.
+      </section>
+      <section class="section" id="Education">
+        <h2 class="section-title">Education</h2>
+        <ul class="section-list">
+          <li class="section-item contacts-item">Gymnasium №8</li>
+          <li class="section-item contacts-item">VSU named after P. M. Masherov</li> 
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class = "footer">
+    <div class ="container footer-container">
+      <div>
+        © 2022 <a href="https://github.com/KrovavayaMerri" class="github nav-link">LizaTipanova</a>
+      </div>
+    </div> </footer> 
+</body>
+</html>
