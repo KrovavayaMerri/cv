@@ -149,3 +149,22 @@ a{
  code{
   font-family:'Lora', serif; ;
  }
+ .footer-container {
+  align-items: center;
+  color: rgb(245, 240, 240);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.github {
+  align-items: center;
+  color: rgb(245, 233, 233);
+  line-height: 45px;
+  text-decoration: none;
+}
+#Education > .section-list > .section-item{
+  white-space: nowrap;
+}
+.footer{
+  background-color: black;
+}
