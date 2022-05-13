@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 20px;
 }
 
 .container {
@@ -104,3 +105,37 @@ header{
   text-align: center;
   text-transform: uppercase;
 }
+.section-title{
+  color: #020101cb;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section-item:before {
+  border: 1px solid #998299;
+  border-radius: 50%;
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  width: 10px;
+}
+.section-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.section-list{
+    border-bottom: 1px solid #672f2f;
+    padding: 10px 10px 35px;
+    width: calc(50% - 20px);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+ 
